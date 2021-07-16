@@ -1,0 +1,17 @@
+.intro__container{
+    border:1px solid white;
+    padding: 10px;
+    min-width: 320px;
+    width: 70ch;
+
+    margin: 15vh 25vw;
+}
+
+.intro__header{
+    margin: 0;
+    font-size: 2rem;
+}
+
+.intro__description{
+    margin: 10px 0;
+}
