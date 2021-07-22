@@ -1,0 +1,49 @@
+.projects__section {
+  text-align: center;
+}
+
+.projects__individual{
+    margin: 50px auto;
+}
+
+.projects__body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.projects__body>*{
+    height: 300px;
+}
+
+.projects__image{
+    min-width: 300px;
+    width: 500px;   
+    border: 1px solid black;
+}
+
+.projects__description{
+    width: auto;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    padding: 10px 30px;
+    justify-content: center;
+  }
+
+.skills-list-child {
+    padding: 5px 10px;
+    background-color: #435b70;
+    border: white 1px solid;
+    color: white;
+    font-weight: bold;
+    user-select: none;
+  }
