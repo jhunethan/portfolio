@@ -2,7 +2,6 @@ import "./Projects.css";
 export default function Projects() {
   return (
     <section className="projects__section">
-      <h1>Projects</h1>
       <IndividualProject
         title="Family Tree"
         subheader="Personal Project"
