@@ -1,5 +1,6 @@
 import "./Projects.css";
 import ncgamesdemo from "../../assets/ncgamesdemo.gif";
+import graphqldemo from "../../assets/graphqldemo.gif";
 
 export default function Projects() {
   return (
@@ -21,7 +22,7 @@ export default function Projects() {
       <IndividualProject
         title="Family Tree"
         subheader="Personal Project"
-        description="A full stack web application, allowing users to collaboratively build a family tree"
+        description="A full stack web application, allowing users to collaboratively build a family tree. This was my first large project."
         techStack={[
           "React",
           "MySQL",
@@ -38,8 +39,11 @@ export default function Projects() {
       <IndividualProject
         title="GraphQL Demo"
         subheader="Personal Project"
-        description="A GraphQL web application that displays information from a public API"
+        description="A GraphQL web application that displays countries from a existing API. I built this app to explore the possiblities of GraphQL."
         techStack={["Apollo", "GraphQL", "React"]}
+        websiteLink="https://graphql-apollo-ethan-lay.netlify.app/"
+        repoLink="https://github.com/jhunethan/graphql-apollo-countries-project"
+        image={graphqldemo}
       />
     </section>
   );

@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #303030;
+  background-color: #DDE2C6 !important;
   color: white;
   font-family: 'Poppins', sans-serif;
 }
