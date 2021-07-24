@@ -3,6 +3,20 @@ export default function Projects() {
   return (
     <section className="projects__section">
       <IndividualProject
+        title="Northcoders Game Reviews"
+        subheader="Solo Project"
+        description="A GraphQL web application that displays information from a public API"
+        techStack={[
+          "React",
+          "Express",
+          "PostgreSQL",
+          "Node.js",
+          "Javascript",
+          "HTML",
+          "CSS",
+        ]}
+      />
+      <IndividualProject
         title="Family Tree"
         subheader="Personal Project"
         description="A full stack web application, allowing users to collaboratively build a family tree"
@@ -16,12 +30,6 @@ export default function Projects() {
         ]}
       />
       <IndividualProject
-        title="Northcoders Game Reviews"
-        subheader="Solo Project"
-        description="A GraphQL web application that displays information from a public API"
-        techStack={["React", "Express", "PostgreSQL", "Node.js", "Javascript", "HTML", "CSS"]}
-      />
-      <IndividualProject
         title="Northcoders Marketplace"
         subheader="Pair programming project"
         description="A GraphQL web application that displays information from a public API"
@@ -33,7 +41,6 @@ export default function Projects() {
         description="A GraphQL web application that displays information from a public API"
         techStack={["Apollo", "GraphQL", "Javascript", "HTML", "CSS"]}
       />
-
     </section>
   );
 }
@@ -58,8 +65,10 @@ function IndividualProject(props) {
         <div className="projects__description">
           <p>{description}</p>
           <div className="skills-list">
-            {techStack.map((item,index) => (
-              <div className="skills-list-child" key={`${title}skill${index}`}>{item}</div>
+            {techStack.map((item, index) => (
+              <div className="skills-list-child" key={`${title}skill${index}`}>
+                {item}
+              </div>
             ))}
           </div>
           <a href={repoLink} className="btn btn-primary">

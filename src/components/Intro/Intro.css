@@ -1,9 +1,8 @@
 .intro__container{
-    border:1px solid white;
     padding: 10px;
     min-width: 320px;
     width: 70ch;
-    height: 60vh;
+    height: auto;
 
     margin: 25vh auto 15vh auto;
 }
@@ -18,7 +17,7 @@
 }
 
 .intro__link{
-    color: black;
+    color: inherit;
     font-weight: bold;
     text-decoration: none;
 }
