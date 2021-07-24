@@ -1,20 +1,22 @@
 import "./Projects.css";
+import ncgamesdemo from "../../assets/ncgamesdemo.gif";
+
 export default function Projects() {
   return (
     <section className="projects__section">
       <IndividualProject
         title="Northcoders Game Reviews"
         subheader="Solo Project"
-        description="A GraphQL web application that displays information from a public API"
+        description="This project was built from scratch consolidating all we had learnt on front-end and back-end. This app allows users to comment and upvote reviews."
         techStack={[
           "React",
           "Express",
           "PostgreSQL",
           "Node.js",
-          "Javascript",
-          "HTML",
-          "CSS",
         ]}
+        repoLink="https://github.com/jhunethan/nc-games"
+        websiteLink="https://ncgames.netlify.app"
+        image={ncgamesdemo}
       />
       <IndividualProject
         title="Family Tree"
@@ -23,9 +25,7 @@ export default function Projects() {
         techStack={[
           "React",
           "MySQL",
-          "Javascript",
           "Express",
-          "Node.js",
           "D3.js",
         ]}
       />
@@ -39,7 +39,7 @@ export default function Projects() {
         title="GraphQL Demo"
         subheader="Personal Project"
         description="A GraphQL web application that displays information from a public API"
-        techStack={["Apollo", "GraphQL", "Javascript", "HTML", "CSS"]}
+        techStack={["Apollo", "GraphQL", "React"]}
       />
     </section>
   );
@@ -53,14 +53,15 @@ function IndividualProject(props) {
     image,
     techStack = [],
     repoLink,
+    websiteLink,
   } = props;
   return (
     <div className="projects__individual container">
       <h2>{title}</h2>
       <p>{subheader}</p>
       <div className="projects__body">
-        <div className="projects__image">
-          <img src={image} alt={title} />
+        <div className="projects__image--container">
+          <img src={image} alt={title} className="projects__image" />
         </div>
         <div className="projects__description">
           <p>{description}</p>
@@ -71,9 +72,14 @@ function IndividualProject(props) {
               </div>
             ))}
           </div>
-          <a href={repoLink} className="btn btn-primary">
-            Github Repo
-          </a>
+          <div className="container space-between">
+            <a href={repoLink} className="btn btn-primary">
+              Github Repo
+            </a>
+            <a href={websiteLink} className="btn btn-primary">
+              Website
+            </a>
+          </div>
         </div>
       </div>
     </div>
