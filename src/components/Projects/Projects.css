@@ -1,6 +1,8 @@
 .projects__section {
-  margin-top: 50px;
+  padding-top: 50px;
   text-align: center;
+
+  background-color: white;
 }
 
 .projects__individual{

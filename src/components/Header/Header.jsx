@@ -3,7 +3,7 @@ import "./Header.css";
 
 export default function Header() {
   return (
-    <Navbar variant="dark" className="navbar--darkPurple" fixed="top">
+    <Navbar variant="dark" bg="dark" fixed="top">
       <Container>
         <Navbar.Brand href="#home">Ethan Lay</Navbar.Brand>
         <Nav className="me-auto">
