@@ -1,27 +1,48 @@
-.intro__container{
-    padding: 10px;
-    min-width: 320px;
-    width: 70ch;
-    height: auto;
-
-    margin: 25vh auto 15vh auto;
-}
-
-.intro__header{
+@keyframes height {
+  from {
+    height: 0vh;
     margin: 0;
-    font-size: 2rem;
+  }
+  to {
+    height: 10vh;
+    margin: 5vh auto;
+  }
 }
 
-.intro__description{
-    margin: 10px 0;
+.intro__container {
+  padding: 10px;
+  min-width: 320px;
+  width: 70ch;
+  height: auto;
+
+  margin: 25vh auto 15vh auto;
+  transition: all 0.3s;
 }
 
-.intro__link{
-    color: inherit;
-    font-weight: bold;
-    text-decoration: none;
+.intro__header {
+  margin: 0;
+  font-size: 2rem;
 }
 
-.intro__link:hover{
-    color: inherit;
+.intro__description {
+  margin: 10px 0;
+}
+
+.intro__link {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.intro__link:hover {
+  color: inherit;
+}
+
+.contact__section {
+  height: 10vh;
+  overflow: hidden;
+  margin: 5vh auto;
+
+  animation-name: height;
+  animation-duration: 3s;
 }

@@ -4,17 +4,12 @@ import graphqldemo from "../../assets/graphqldemo.gif";
 
 export default function Projects() {
   return (
-    <section className="projects__section">
+    <section className="projects__section" id="projects">
       <IndividualProject
         title="Northcoders Game Reviews"
         subheader="Solo Project"
         description="This project was built from scratch consolidating all we had learnt on front-end and back-end. This app allows users to comment and upvote reviews."
-        techStack={[
-          "React",
-          "Express",
-          "PostgreSQL",
-          "Node.js",
-        ]}
+        techStack={["React", "Express", "PostgreSQL", "Node.js"]}
         repoLink="https://github.com/jhunethan/nc-games"
         websiteLink="https://ncgames.netlify.app"
         image={ncgamesdemo}
@@ -22,28 +17,25 @@ export default function Projects() {
       <IndividualProject
         title="Family Tree"
         subheader="Personal Project"
-        description="A full stack web application, allowing users to collaboratively build a family tree. This was my first large project."
-        techStack={[
-          "React",
-          "MySQL",
-          "Express",
-          "D3.js",
-        ]}
+        description="A full stack web application, allowing users to collaboratively build a family tree. This was my first large personal project with the purpose of learning web development. Built through hours of trial and error."
+        techStack={["React", "MySQL", "Express", "D3.js"]}
+        repoLink="https://github.com/jhunethan/Family-Tree"
+        image={"https://media1.giphy.com/media/VrLXH90qteqeb6bC4K/giphy.gif"}
+      />
+      <IndividualProject
+        title="GraphQL Demo"
+        subheader="Personal Project"
+        description="A GraphQL web application that displays countries from a existing API. I built this app to learn GraphQL."
+        techStack={["Apollo", "GraphQL", "React"]}
+        websiteLink="https://graphql-apollo-ethan-lay.netlify.app/"
+        repoLink="https://github.com/jhunethan/graphql-apollo-countries-project"
+        image={graphqldemo}
       />
       <IndividualProject
         title="Northcoders Marketplace"
         subheader="Pair programming project"
         description="A GraphQL web application that displays information from a public API"
         techStack={["React", "Javascript", "HTML", "CSS"]}
-      />
-      <IndividualProject
-        title="GraphQL Demo"
-        subheader="Personal Project"
-        description="A GraphQL web application that displays countries from a existing API. I built this app to explore the possiblities of GraphQL."
-        techStack={["Apollo", "GraphQL", "React"]}
-        websiteLink="https://graphql-apollo-ethan-lay.netlify.app/"
-        repoLink="https://github.com/jhunethan/graphql-apollo-countries-project"
-        image={graphqldemo}
       />
     </section>
   );
@@ -77,12 +69,16 @@ function IndividualProject(props) {
             ))}
           </div>
           <div className="container space-between">
-            <a href={repoLink} className="btn btn-primary">
-              Github Repo
-            </a>
-            <a href={websiteLink} className="btn btn-primary">
-              Website
-            </a>
+            {repoLink && (
+              <a href={repoLink} className="btn btn-primary">
+                Github Repo
+              </a>
+            )}
+            {websiteLink && (
+              <a href={websiteLink} className="btn btn-primary">
+                Website
+              </a>
+            )}
           </div>
         </div>
       </div>
