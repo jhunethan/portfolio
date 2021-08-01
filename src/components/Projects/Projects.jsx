@@ -25,17 +25,11 @@ export default function Projects() {
       <IndividualProject
         title="GraphQL Demo"
         subheader="Personal Project"
-        description="A GraphQL web application that displays countries from a existing API. I built this app to learn GraphQL."
+        description="A GraphQL web application that displays countries from a existing API. This was the first time I've experimented with GraphQL."
         techStack={["Apollo", "GraphQL", "React"]}
         websiteLink="https://graphql-apollo-ethan-lay.netlify.app/"
         repoLink="https://github.com/jhunethan/graphql-apollo-countries-project"
         image={graphqldemo}
-      />
-      <IndividualProject
-        title="Northcoders Marketplace"
-        subheader="Pair programming project"
-        description="A GraphQL web application that displays information from a public API"
-        techStack={["React", "Javascript", "HTML", "CSS"]}
       />
     </section>
   );

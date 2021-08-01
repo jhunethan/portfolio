@@ -1,5 +1,9 @@
-.space-between{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.space-between {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hidden {
+  transform: translateY(-5000px);
 }
