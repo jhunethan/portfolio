@@ -64,12 +64,12 @@ function IndividualProject(props) {
           </div>
           <div className="container space-between">
             {repoLink && (
-              <a href={repoLink} className="btn btn-primary">
+              <a href={repoLink} className="btn btn-primary" target="_blank" rel="noreferrer">
                 Github Repo
               </a>
             )}
             {websiteLink && (
-              <a href={websiteLink} className="btn btn-primary">
+              <a href={websiteLink} className="btn btn-primary" target="_blank" rel="noreferrer">
                 Website
               </a>
             )}
