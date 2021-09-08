@@ -31,6 +31,18 @@ export default function Projects() {
         repoLink="https://github.com/jhunethan/graphql-apollo-countries-project"
         image={graphqldemo}
       />
+      <div className="projects_individual container projects__last">
+        <h1>And many more projects...</h1>
+        <h2>Visit my GitHub to see more</h2>
+        <a
+          href="https://github.com/jhunethan"
+          className="btn btn-primary btn-lg"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>
+      </div>
     </section>
   );
 }
@@ -64,12 +76,22 @@ function IndividualProject(props) {
           </div>
           <div className="container space-between">
             {repoLink && (
-              <a href={repoLink} className="btn btn-primary" target="_blank" rel="noreferrer">
+              <a
+                href={repoLink}
+                className="btn btn-primary"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Github Repo
               </a>
             )}
             {websiteLink && (
-              <a href={websiteLink} className="btn btn-primary" target="_blank" rel="noreferrer">
+              <a
+                href={websiteLink}
+                className="btn btn-primary"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Website
               </a>
             )}
