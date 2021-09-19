@@ -7,8 +7,8 @@ export default function Projects() {
     <section className="projects__section" id="projects">
       <IndividualProject
         title="Northcoders Game Reviews"
-        subheader="Solo Project"
-        description="This project was built from scratch consolidating all we had learnt on front-end and back-end. This app allows users to comment and upvote reviews."
+        subheader="Northcoders Solo Project"
+        description="Full stack appilication that allows the users to read and interact with a database of game reviews. This project was built from scratch consolidating all we had learnt on front-end and back-end. This app allows users to comment and upvote reviews."
         techStack={["React", "Express", "PostgreSQL", "Node.js"]}
         repoLink="https://github.com/jhunethan/nc-games"
         websiteLink="https://ncgames.netlify.app"
@@ -17,7 +17,7 @@ export default function Projects() {
       <IndividualProject
         title="Family Tree"
         subheader="Personal Project"
-        description="A full stack web application, allowing users to collaboratively build a family tree. This was my first large personal project with the purpose of learning web development. Built through hours of trial and error."
+        description="A full stack web application, allowing users to collaboratively build a family tree. This was my first large personal project with the purpose of learning web development. This project used a RESTful API with a MySQL database."
         techStack={["React", "MySQL", "Express", "D3.js"]}
         repoLink="https://github.com/jhunethan/Family-Tree"
         image={"https://media1.giphy.com/media/VrLXH90qteqeb6bC4K/giphy.gif"}
@@ -30,6 +30,14 @@ export default function Projects() {
         websiteLink="https://graphql-apollo-ethan-lay.netlify.app/"
         repoLink="https://github.com/jhunethan/graphql-apollo-countries-project"
         image={graphqldemo}
+      />
+      <IndividualProject
+        title="Earthquake Locator"
+        subheader="Northcoders Pair Project"
+        description="As part of the Northcoders course, I built a front end user interface which uses an existing API that provides data about Earthquakes. The user can interact with the map, filtering earthquakes by date."
+        techStack={["JavaScript", "Google API", "React"]}
+        repoLink="https://github.com/jhunethan/fe-react-data-visualisation"
+        image={"https://media1.giphy.com/media/RnTtUgumZ6tnPuqq2V/giphy.gif?cid=790b76110a8088ceba3764b47ccdd1a4ea147c60c8485fff&rid=giphy.gif&ct=g"}
       />
       <div className="projects_individual container projects__last">
         <h1>And many more projects...</h1>
